@@ -15,8 +15,6 @@ const ast = parser.parse(sourceCode, {
   plugins: ["typescript"],
 });
 
-console.log("ast..", ast);
-
 const { code } = transformFromAstSync(ast, sourceCode, {
   plugins: [
     [
